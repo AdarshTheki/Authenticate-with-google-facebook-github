@@ -1,23 +1,30 @@
-import React from 'react'
-import "./NavBar.css";
-import logo from "./Logo.png";
+import React from "react";
+import logo from "../assets/Logo.png";
+import { Link } from "react-router-dom";
 
-
-const NavBar = () => {
+const NavBar = ({ user }) => {
   return (
     <div>
       <div className='navbar'>
-        <span className='logo'>Your LOGO</span>
-        <ul className='list'>
-          <li className='listItems'>
-            <img className='avatar' src={logo} alt='avatar' />
-          </li>
-          <li className='listItems'>Adarsh Verma</li>
-          <li className='listItems'>adadrshverma549@gmail.com</li>
-        </ul>
+        <span>
+          <Link className='Link' to='/'>
+            Desktop
+          </Link>
+        </span>
+        {user ? (
+          <ul className='list'>
+            <li className='listItems'>
+              <img className='avatar' src={logo} alt='avatar' />
+            </li>
+            <li className='listItems'>Adarsh Verma</li>
+            <li className='listItems'>Logout</li>
+          </ul>
+        ) : (
+          <Link className="Link" to='/login'>LogIn</Link>
+        )}
       </div>
     </div>
   );
-}
+};
 
-export default NavBar
+export default NavBar;

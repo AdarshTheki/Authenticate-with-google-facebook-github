@@ -1,6 +1,6 @@
 import React from "react";
-import { post } from "./users"; 
-import Card from "./Components/Cart";
+import { post } from "../users"; 
+import Card from "../Components/Cart";
 
 const Home = () => {
   return (

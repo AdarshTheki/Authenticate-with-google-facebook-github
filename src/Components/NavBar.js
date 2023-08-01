@@ -1,8 +1,8 @@
 import React from "react";
-import logo from "../assets/Logo.png";
 import { Link } from "react-router-dom";
+import Authenticated from './Authenticated'
 
-const NavBar = ({ user }) => {
+const NavBar = () => {
   return (
     <div>
       <div className='navbar'>
@@ -11,17 +11,7 @@ const NavBar = ({ user }) => {
             Desktop
           </Link>
         </span>
-        {user ? (
-          <ul className='list'>
-            <li className='listItems'>
-              <img className='avatar' src={logo} alt='avatar' />
-            </li>
-            <li className='listItems'>Adarsh Verma</li>
-            <li className='listItems'>Logout</li>
-          </ul>
-        ) : (
-          <Link className="Link" to='/login'>LogIn</Link>
-        )}
+        <Authenticated/>
       </div>
     </div>
   );

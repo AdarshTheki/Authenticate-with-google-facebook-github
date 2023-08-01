@@ -19,6 +19,9 @@ body {
 .Link:hover {
   color: #b88914;
 }
+.cursor {
+  cursor: pointer;
+}
 
 /* In NavBar Components */
 .navbar {
@@ -36,14 +39,14 @@ body {
 }
 .listItems {
   margin-right: 20px;
-  cursor: pointer;
   font-weight: 500;
 }
-.avatar {
+.listAvatar {
+  border-radius: 50%;
   display: block;
-  padding: 5px;
-  width: 62px;
-  background-color: aliceblue;
+  padding: 2px;
+  width: 40px;
+  background-image: linear-gradient(blue, pink , red, purple, yellow);
   object-fit: contain;
 }
 
@@ -64,8 +67,8 @@ body {
   border: 1px solid gray;
   padding: 10px;
   border-radius: 1vmax;
-  width: 30%;
-  min-width: 200px;
+  width: 22%;
+  min-width: 220px;
   transition: all 0.4s ease-in-out;
 }
 .card:hover {

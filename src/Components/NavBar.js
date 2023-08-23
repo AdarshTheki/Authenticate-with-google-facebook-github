@@ -8,7 +8,7 @@ const NavBar = () => {
       <div className='navbar'>
         <span>
           <Link className='Link' to='/'>
-            Desktop
+            Gallery
           </Link>
         </span>
         <Authenticated/>

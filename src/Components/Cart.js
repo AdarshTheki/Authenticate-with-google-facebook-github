@@ -1,15 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import 'react-icons/md'
+import { MdOutlineEmail } from "react-icons/md";
 
-const Card = ({ post }) => {
+const Card = ({ login, id, avatar_url }) => {
   return (
     <div className='card'>
-      <Link className="cardLink" to={`post/${post.id}`}>
-        <span className='title'>{post.login}</span>
-        <img className='img' src={post.avatar_url} alt={post.login} />
+      <Link className="cardLink" to={`post/${id}`}>
+        <span className='title'>{login}</span>
+        <img className='img' src={avatar_url} alt={login} />
         <p className='desc'>
-          {post.login} Lorem ipsum dolor sit amet consectetur adipisicing{" "}
-          <span className='email'>{post.login}@gitHub.com</span>
+          <span className='email'><MdOutlineEmail/> {login}@gitHub.com</span>
         </p>
         <button className='card-btn'>Read More</button>
       </Link>

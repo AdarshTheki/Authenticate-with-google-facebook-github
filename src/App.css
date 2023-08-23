@@ -42,12 +42,10 @@ body {
   font-weight: 500;
 }
 .listAvatar {
-  border-radius: 50%;
-  display: block;
-  padding: 2px;
+  font-size: 2rem;
+  cursor: pointer;
   width: 40px;
-  background-image: linear-gradient(blue, pink , red, purple, yellow);
-  object-fit: contain;
+  border-radius: 50%;
 }
 
 /* In Home Components */
@@ -88,10 +86,13 @@ body {
 }
 
 .card .email {
+  display: inline-flex;
   font-size: 14px;
   text-decoration: underline;
   cursor: pointer;
   color: rgb(255, 138, 197);
+  align-items: center;
+  gap: 5px;
 }
 
 .card .title {
@@ -159,7 +160,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column; /* chnage*/
+  flex-direction: column; /* change*/
 }
 .login .loginTitle {
   font-size: 1.5rem;

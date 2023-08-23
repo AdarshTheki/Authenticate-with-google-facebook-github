@@ -8,7 +8,7 @@ import "./App.css";
 
 
 const App = () => {
-  const {isLoading, isAuthenticated, error, user, loginWithRedirect, logout} = useAuth0()
+  const {isAuthenticated} = useAuth0()
   return (
     <BrowserRouter>
       <div>

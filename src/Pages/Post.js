@@ -23,9 +23,9 @@ const Post = () => {
         consectetur adipisicing elit. Commodi necessitatibus laboriosam delectus
         architecto non animi error beatae quasi optio reiciendis dolor in link
         to{" "}
-        <a href={posts.html_url} target="__blank" title='user detail'>
+        <Link to={posts.html_url} target="__blank" title='user detail'>
           Click Here 👈
-        </a>
+        </Link>
       </p>
     </div>
   );

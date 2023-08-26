@@ -1,4 +1,48 @@
-# Getting Started with Create React App
+## Authenticate with Google, Facebook & Github Website with React
+
+![GitHub last commit](https://img.shields.io/github/last-commit/AdarshTheki/Authenticate-with-google-facebook-github)
+![GitHub repo size](https://img.shields.io/github/repo-size/AdarshTheki/Authenticate-with-google-facebook-github)
+![GitHub](https://img.shields.io/github/license/AdarshTheki/Authenticate-with-google-facebook-github)
+
+## Getting Started
+
+1. Clone the repository:
+
+```sh
+  git clone https://github.com/AdarshTheki/Authenticate-with-google-facebook-github.git
+  cd auth-users-forms
+```
+
+2. Start the development server:
+
+```sh
+  npm install
+```
+
+3. Open the website in your browser:
+
+```sh
+  npm run dev
+  http://localhost:5173
+```
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b my-new-branch`
+3. Make your changes.
+4. Commit your changes: `git commit -m 'Add some feature'`
+5. Push the branch: `git push origin my-new-branch`
+6. Submit a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the **[LICENSE](./LICENSE)** file for details.
+
+## Descriptions
+This README file outlines the key features, getting started instructions, technologies used, and how to contribute to the project. Make sure to include your own screenshots, links, and detailed descriptions that accurately represent your eCommerce website built with React.
 
 ### npm install @auth0/auth0-react
 
